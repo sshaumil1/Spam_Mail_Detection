@@ -5,7 +5,7 @@ To build a NLP methodology to determine whether a mail is spam or ham.
 ## Data Gathering & Initial Preprocessing
 First I read a csv file and store it in a data frame. Then, I took only relevant features for my further work. After that, I used the LangDetect library to find out the languages in which the reviews were written. After locating the reviews, I translated them with the help of googletrans library. Then I exported the translated reviews in a csv file for further use as translator takes high time for translation.
 ## EDA
-First I checked whether the data is balanced or not by plotting a bar plot. In that way, I found that the data was highly imbalanced, which means I had to do balancing. Then, I checked Unigram, Bigram, Trigram. Following, I plot a wordcloud. Then, I extracted the most common keywords using the Yake Keyword Extractor.
+First I checked whether the data is balanced or not by plotting a bar plot. In that way, I found that the data was highly imbalanced, which means I had to do balancing. Then, I checked Unigram, Trigram. Following, I plot a wordcloud. Then, I extracted the most common keywords using the Yake Keyword Extractor.
 ## Preprocessing
 I wrote functions to clean the data, including to remove spaces, to expand words, to handle accented characters, to remove stop words, to find root words, etc. Then I applied all the functions one by one on the data. I used different libraries for preprocessing, which were:
 - **wordNetLemmatizer:** for finding root word
